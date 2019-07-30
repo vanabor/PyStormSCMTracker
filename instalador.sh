@@ -2,7 +2,7 @@
 
 versao=`lsb_release -c | awk '{print $2}'`
 
-if [ ! "$versao" = "natty" ] && [ ! "$versao" = "oneiric" ] && [ ! "$versao" = "quantal" ]; then
+if [ ! "$versao" = "bionic" ] && [ ! "$versao" = "xenial" ]; then
 	echo "Desculpe, mas o software não está disponivel para esta versão de SO" 
 	sleep 3
 	exit 1
